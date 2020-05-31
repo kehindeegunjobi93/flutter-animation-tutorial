@@ -32,6 +32,13 @@ class _BlogDetailState extends State<BlogDetail> with SingleTickerProviderStateM
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    animationController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
 
